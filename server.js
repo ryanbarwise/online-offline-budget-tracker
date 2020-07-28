@@ -17,8 +17,9 @@ app.use(express.static("public"));
 
 
 
-  mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds339648.mlab.com:39648/heroku_lxx54wzk", { useNewUrlParser: true,
+  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget" ,{ useNewUrlParser: true,
 useFindAndModify: false
+//"mongodb://user1:password1@ds339648.mlab.com:39648/heroku_lxx54wzk"
 });
 
 
